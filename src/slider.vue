@@ -120,14 +120,13 @@ export default {
 };
 </script>
 
-<style lang="less">
-    @g-base: 46.875rem;
+<style>
     .slider-full-frame {
-        width: 750/@g-base;
+        width: 100%;
         overflow-x: hidden;
-        .slider-container {
-            display: flex;
-            flex-wrap: nowrap;
-        }
+    }
+    .slider-container {
+        display: flex;
+        flex-wrap: nowrap;
     }
 </style>
