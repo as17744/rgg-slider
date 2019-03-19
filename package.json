@@ -1,6 +1,6 @@
 {
   "name": "rgg-slider",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A slider component based on Vue.",
   "main": "dist/index.js",
   "scripts": {
