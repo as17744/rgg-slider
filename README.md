@@ -43,6 +43,7 @@ Tip: It's very important that the slot of every single item must be named as `it
 - `position` _optional_ - You can decide which item shows first when the slider show up. Example if you pass 3 to that prop, the 4th item will show first. The default value is _0_.
 - `play` _optional_ - The slider can play automatically. Default value: _false_.
 - `duration` _optional_ - You can decide the duration of a single sliding animation. If the value of _play_ is false this prop will do nothing. Default value: _3000_.
+- `vertical` _optional_ - You can decide whether the page will scroll vertically when your finger is touch on the slider area. Default value: true.
 ## events
 - `slide` - Once a sliding animation finished this method will invoke to the parent component. There is a param passed to the method, which decalres the direction of this animation.
 

@@ -28,6 +28,10 @@ export default {
             type: Number,
             default: 3000,
         },
+        vertical: {
+            type: Boolean,
+            default: true,
+        },
         list: Array,
         containerStyle: Object,
     },
@@ -71,7 +75,7 @@ export default {
             if (this.direction === 0) {
                 this.direction = Math.abs(disX) < Math.abs(disY) ? 2 : 1;
             }
-            if (this.direction === 1) {
+            if (!this.vertical || this.direction === 1) {
                 e.preventDefault();
                 const realDis = et.pageX - this.x; // 真实移动的距离
                 this.invalid = (realDis > 0 && this.curIndex <= 0) || (this.curIndex + 1 >= this.list.length && realDis < 0); // eslint-disable-line
